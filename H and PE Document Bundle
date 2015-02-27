@@ -2,7 +2,21 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Social History (text only) and Physical Exam (text only) and Results  Document Bundle Example -->
+<!-- 
+History and Physical Exam  FHIR document Bundle example containing:
+1) Patient
+2) Author/Practitioner
+3) Results Section template
+  a) Results Organizer  (2)
+    i) Result Observation Entry (Many)
+4)Social History Section
+  a) Smoking Status Observation
+  b)  Social History Observation
+  c)   todo Pregnancy Observation
+  d)   todo Estimated Date of Delivery
+  e)   Tobacco Use
+5) Physical Exam  ( text only)
+-->
 
 <Bundle xmlns="http://hl7.org/fhir">
 	<id value="93b2939a-23c0-49c5-9804-0eabc04669"/>
