@@ -1,0 +1,1442 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Social History (text only) and Physical Exam (text only) and Results  Document Bundle Example -->
+
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="93b2939a-23c0-49c5-9804-0eabc04669"/>
+
+	<meta>
+		<lastUpdated value="2015-02-05T03:38:08Z"/>
+	</meta>
+	<type value="document"/>
+	<base value="http://fhir-dev.healthintersections.com.au/open/"/>
+	<total value="1"/>
+	<link>
+		<relation value="self"/>
+		<url value="http://fhir-dev.healthintersections.com.au/open/Composition/_search?search-id=46b05316-f1a1-41b6-9ab6-3240434049&amp;&amp;_id=1239&amp;_include=%2A&amp;search-sort=_id"/>
+	</link>
+	<entry>
+		<resource>
+			<Composition>
+				<id value="1239"/>
+				<meta>
+					<versionId value="2"/>
+					<lastUpdated value="2015-02-05T03:38:08Z"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">History and Physical Document</div>
+				</text>
+				<identifier>
+					<use value="usual"/>
+					<label value="CCDA Physical Exam Section Example"/>
+					<system value="https://healthedatainc.com/examples"/>
+					<value value="ccda-pe-example"/>
+				</identifier>
+				<date value="2015-01-26T16:14:49Z"/>
+				<type>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.46"/>
+						<code value="34117-2"/>
+						<display value="History and physical note"/>
+						<primary value="true"/>
+					</coding>
+				</type>
+				<status value="final"/>
+				<confidentiality>
+					<system value="http://hl7.org/fhir/v3/Confidentiality"/>
+					<code value="U"/>
+					<display value="unrestricted"/>
+					<primary value="true"/>
+				</confidentiality>
+				<subject>
+					<reference value="Patient/1691"/>
+				</subject>
+				<author>
+					<reference value="Practitioner/116"/>
+				</author>
+				<section>
+					<title value="Physical Exam"/>
+					<content>
+						<reference value="List/54"/>
+						<display value="Physical Exam List Example"/>
+					</content>
+				</section>
+				<section>
+					<title value="Social History"/>
+					<content>
+						<reference value="List/55"/>
+						<display value="Social History List Example"/>
+					</content>
+				</section>
+				<section>
+					<title value="Results"/>
+					<content>
+						<reference value="List/57"/>
+						<display value="Results List Example"/>
+					</content>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Patient>
+				<id value="1691"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-02T19:32:21Z"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">			<table class="header_table">				<tr>					<td class="td_header_role_name">						<span class="td_label">Patient</span>					</td>					<td class="td_header_role_value">Isabella Jones</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Date of birth</span>					</td>					<td class="td_header_role_value">May 1, 2005 </td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Sex</span>					</td>					<td class="td_header_role_value">Female</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Race</span>					</td>					<td class="td_header_role_value">Aleut</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Ethnicity</span>					</td>					<td class="td_header_role_value">Not Hispanic or Latino</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Contact info</span>					</td>					<td class="td_header_role_value"> Primary Home:<br/>1357 Amber Drive<br/>Beaverton, OR 97867, US<br/>Tel:  (816)276-6909<br/>					</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Patient IDs</span>					</td>					<td class="td_header_role_value">998991 2.16.840.1.113883.19.5.99999.2<br/>111-00-2330 2.16.840.1.113883.4.1<br/>					</td>				</tr>			</table>		</div>
+				</text>
+				<extension url="http://hl7.org/fhir/ExtensionDefinition/us-core-race">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/Race"/>
+							<display value="American Indian or Alaska Native"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<extension url="http://hl7.org/fhir/ExtensionDefinition/us-core-ethnicity">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/Ethnicity"/>
+							<display value="Not Hispanic or Latino"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<extension url="http://hl7.org/fhir/ExtensionDefinition/us-core-religion">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/ReligiousAffiliation"/>
+							<display value="Christian (non-Catholic, non-specific)"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<!-- Fake ID using HL7 example OID. -->
+				<identifier>
+					<use value="usual"/>
+					<label value="MRN"/>
+					<system value="urn:oid:2.16.840.1.113883.19.5.99999.2"/>
+					<value value="998991"/>
+				</identifier>
+				<!-- Fake Social Security Number using the actual SSN OID. -->
+				<identifier>
+					<use value="usual"/>
+					<label value="SSN"/>
+					<system value="urn:oid:2.16.840.1.113883.4.1"/>
+					<value value="111-00-2330"/>
+				</identifier>
+				<!-- Peter James Chalmers, but called "Jim" -->
+				<name>
+					<use value="official"/>
+					<family value="Jones"/>
+					<given value="Isabella"/>
+				</name>
+				<name>
+					<use value="usual"/>
+					<given value="Isa"/>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="(816)276-6909"/>
+					<use value="home"/>
+				</telecom>
+				<!-- use FHIR code system for male / female -->
+				<gender value="female"/>
+				<birthDate value="2005-05-01"/>
+				<deceasedBoolean value="false"/>
+				<address>
+					<use value="home"/>
+					<line value="1357 Amber Drive"/>
+					<city value="Beaqverton"/>
+					<state value="OR"/>
+					<postalCode value="97867"/>
+					<country value="US"/>
+					<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
+				</address>
+				<maritalStatus>
+					<coding>
+						<system value="MaritalStatusCode"/>
+						<code value="M"/>
+						<display value="Married"/>
+					</coding>
+				</maritalStatus>
+				<contact>
+					<relationship>
+						<coding>
+							<system value="http://hl7.org/fhir/patient-contact-relationship"/>
+							<code value="parent"/>
+						</coding>
+					</relationship>
+					<name>
+						<family value="Jones"/>
+						<given value="Ralph"/>
+					</name>
+					<address>
+						<use value="home"/>
+						<line value="1357 Amber Drive"/>
+						<city value="Beaqverton"/>
+						<state value="OR"/>
+						<postalCode value="97867"/>
+						<country value="US"/>
+						<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
+					</address>
+				</contact>
+				<communication>
+					<coding>
+						<system value="IETF language tag"/>
+						<code value="en"/>
+						<display value="English"/>
+					</coding>
+				</communication>
+				<active value="true"/>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Practitioner>
+				<id value="116"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-02T19:52:06Z"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">			<table class="header_table">				<tbody>					<tr>						<td class="td_header_role_name">							<span class="td_label">Author</span>						</td>						<td class="td_header_role_value">Henry Seven</td>					</tr>					<tr>						<td class="td_header_role_name">							<span class="td_label">Contact info</span>						</td>						<td class="td_header_role_value">1002 Healthcare Drive <br/>Portland, OR 99123, US<br/>Tel:  555-555-1002<br/>						</td>					</tr>				</tbody>			</table>		</div>
+				</text>
+				<identifier>
+					<system value="urn:oid:2.16.840.1.113883.4.6"/>
+					<value value="99999999"/>
+				</identifier>
+				<name>
+					<family value="Seven"/>
+					<given value="Henry"/>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="(555)555-1002"/>
+					<use value="work"/>
+				</telecom>
+				<address>
+					<line value="1002 Healthcare Drive"/>
+					<city value="Portland"/>
+					<state value="OR"/>
+					<postalCode value="99123"/>
+					<country value="US"/>
+				</address>
+				<organization>
+					<display value="Allopathic &amp; Osteopathic Physicians"/>
+				</organization>
+				<role>
+					<coding>
+						<system value="http://hl7.org/fhir/v2/0286"/>
+						<code value="RP"/>
+					</coding>
+				</role>
+				<period>
+					<start value="2005-03-29T22:44:11+05:00"/>
+				</period>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<List>
+				<id value="57"/>
+				<meta>
+					<versionId value="5"/>
+					<lastUpdated value="2015-02-05T03:53:22Z"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">			<h3>CBC Report issued 3-Mar 2011 11:45</h3>			<pre>Test                  Units       Value       Reference RangeHaemoglobin           g/L         176         135 - 180Red Cell Count        x10*12/L    5.9         4.2 - 6.0Haematocrit                       0.55+       0.38 - 0.52Mean Cell Volume      fL          99+         80 - 98Mean Cell Haemoglobin pg          36+         27 - 35Platelet Count        x10*9/L     444         150 - 450White Cell Count      x10*9/L     4.6         4.0 - 11.0Neutrophils           %           20Neutrophils           x10*9/L     0.9---      2.0 - 7.5Lymphocytes           %           20Lymphocytes           x10*9/L     0.9-        1.1 - 4.0Monocytes             %           20Monocytes             x10*9/L     0.9         0.2 - 1.0Eosinophils           %           20Eosinophils           x10*9/L     0.92++      0.04 - 0.40Basophils             %           20Basophils             x10*9/L     0.92+++     &lt;0.21      </pre>			<p>Acme Laboratory, Inc signed: Dr Pete Pathologist</p>			<h3>ELECTROCARDIOGRAM (EKG) INFORMATION</h3>EKG	Sinus rhythm without acute changes      </div>
+				</text>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.52"/>
+						<code value="30954-2"/>
+						<display value="Results"/>
+						<primary value="true"/>
+					</coding>
+				</code>
+				<date value="2015-02-03T16:14:49Z"/>
+				<mode value="working"/>
+				<!--multiple observations - panel-->
+				<entry>
+					<item>
+						<reference value="Observation/example-result-organizer1"/>
+						<display value="CBC"/>
+					</item>
+					<!--single observation-->
+				</entry>
+				<entry>
+					<item>
+						<reference value="Observation/example-result-organizer2"/>
+						<display value="EKG"/>
+					</item>
+				</entry>
+			</List>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<List>
+				<id value="55"/>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<h3>SOCIAL HISTORY		</h3>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Social History Element</th>
+									<th>Description</th>
+									<th>Effective Dates</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+                               Smoking Status</td>
+									<td>Former smoker</td>
+									<td>2005-05-01 to 2009-02-27</td>
+								</tr>
+								<tr>
+									<td>
+                              smoking</td>
+									<td>1 pack per day</td>
+									<td>20050501 to 20090227130000+0500</td>
+								</tr>
+								<tr>
+									<td>
+                              smoking</td>
+									<td>None</td>
+									<td>20090227130000+0500 - today</td>
+								</tr>
+								<tr>
+									<td>
+                              Alcohol consumption</td>
+									<td>None</td>
+									<td>20050501 - </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</text>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.46"/>
+						<code value="29762-2"/>
+						<display value="Social history Narrative"/>
+						<primary value="true"/>
+					</coding>
+				</code>
+				<date value="2012-06-17T00:00:00-05:00"/>
+				<mode value="working"/>
+				<entry>
+					<item>
+						<reference value="Observation/argonaut-ccda-smokingstatus-example"/>
+					</item>
+				</entry>
+				<entry>
+					<item>
+						<reference value="Observation/argonaut-ccda-socialhistoryobs-example"/>
+					</item>
+				</entry>
+				<!--
+	<entry>
+		<item>
+			<reference value="Observation/argonaut-ccda-pregnancyobs-example"/>
+		</item>
+
+	</entry>
+-->
+				<entry>
+					<item>
+						<reference value="Observation/argonaut-ccda-tobaccouse-example1"/>
+					</item>
+				</entry>
+				<entry>
+					<item>
+						<reference value="Observation/argonaut-ccda-tobaccouse-example2"/>
+					</item>
+				</entry>
+			</List>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<List>
+				<id value="54"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-02T20:35:41Z"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">	<h3>PHYSICAL EXAM</h3>		<ol>				<li>HEENT: All normal to examination.</li>				<li>Heart: RRR, no murmur.</li>				<li>THORAX &amp; LUNGS: Clear without rhonchi or wheeze.</li>				<li>ABDOMEN: No distension, tenderness, or guarding, obese, pos bowel sounds.</li>				<li>BACK: Normal to inspection and palpation, without tenderness; no presacral edema.</li>				<li>EXTREMITIES: Doughy edema bilaterally, chronic stasis changes, no asymmetrical swelling.</li>			</ol>		</div>
+				</text>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<version value="2.52"/>
+						<code value="29545-1"/>
+						<display value="Physical findings"/>
+						<primary value="true"/>
+					</coding>
+				</code>
+				<date value="2015-01-26T16:14:49Z"/>
+				<mode value="working"/>
+			</List>
+		</resource>
+	</entry>
+	<entry><resource>
+		
+		<Observation>
+			<id value="argonaut-ccda-smokingstatus-example"/>
+			<text>
+				<status value="generated"/>
+				<div xmlns="http://www.w3.org/1999/xhtml">
+					<table border="1" width="100%">
+						<tbody>
+							<tr>
+								<td>
+                               Smoking Status</td>
+								<td>Former smoker</td>
+								<td>2005-05-01 to 2009-02-27</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</text>
+			<name>
+				<!-- map LOINC to Assertion code -->
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="72166-2"/>
+					<display value="Tobacco smoking status NHIS"/>
+				</coding>
+				<text value="Smoking Status"/>
+			</name>
+			<!--  coded value from (Current Smoking Status)
+   -->
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="8517006"/>
+					<display value="Former smoker"/>
+					<valueSet>
+						<display value="http://hl7.org/fhir/vs/observation-ccdasmokingstatus"/>
+					</valueSet>
+				</coding>
+				<text value="Former smoker"/>
+			</valueCodeableConcept>
+			<!--since former smoker use period here-->
+			<appliesPeriod>
+				<start value="2005-05-01"/>
+				<end value="2009-02-27"/>
+			</appliesPeriod>
+			<!-- completed maps to final: -->
+			<status value="final"/>
+		</Observation>
+	
+	</resource></entry>
+	<entry><resource>
+		<Observation>
+			<id value="argonaut-ccda-socialhistoryobs-example"/>
+			<text>
+				<status value="generated"/>
+				<div xmlns="http://www.w3.org/1999/xhtml">
+					<table border="1" width="100%">
+						<tbody>
+							<tr>
+								<td>
+                              Alcohol consumption</td>
+								<td>None</td>
+								<td>2005-05-01</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</text>
+			<name>
+				<!--  coded value from (Social History Type)
+   -->
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="160573003"/>
+					<display value="Alcohol intake"/>
+				</coding>
+				<text value="Alcohol consumption"/>
+			</name>
+			<valueString value="None"/>
+			<!-- use period here-->
+			<appliesPeriod>
+				<start value="2005-05-01"/>
+			</appliesPeriod>
+			<!-- completed maps to final: -->
+			<status value="final"/>
+			<identifier>
+				<value value="37f76c51-6411-4e1d-8a37-957fd49d2cef"/>
+			</identifier>
+		</Observation>
+</resource></entry>
+	<entry><resource>
+		<Observation>
+			<id value="argonaut-ccda-tobaccouse-example1"/>
+			<text>
+				<status value="generated"/>
+				<div xmlns="http://www.w3.org/1999/xhtml">
+					<table border="1" width="100%">
+						<tbody>
+							<tr>
+								<td>
+                              smoking</td>
+								<td>1 pack per day</td>
+								<td>20050501 to 20090227130000+0500</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</text>
+			<name>
+				<!--  coded value from (Social History Type)
+   -->
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="11367-0"/>
+					<display value="History of tobacco use"/>
+				</coding>
+				<text value="Smoking"/>
+			</name>
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://snomed.info/sct"/>
+					<code value="160605003"/>
+					<display value="Heavy cigarette smoker (20-39 cigs/day)"/>
+					<valueSet>
+						<display value="Tobacco Use Value Set"/>
+					</valueSet>
+				</coding>
+				<text value="1 Pack per Day"/>
+			</valueCodeableConcept>
+			<!-- use period here-->
+			<appliesPeriod>
+				<start value="2005-05-01"/>
+				<end value="2009-02-27"/>
+			</appliesPeriod>
+			<!-- completed maps to final: -->
+			<status value="final"/>
+		</Observation>
+</resource></entry>
+	<entry><resource>
+	<Observation>
+		<id value="argonaut-ccda-tobaccouse-example2"/>
+		<text>
+			<status value="generated"/>
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<table border="1" width="100%">
+					<tbody>
+						<tr>
+							<td>
+                              smoking</td>
+							<td>None</td>
+							<td>20090227130000+0500 - today</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</text>
+		<name>
+			<!--  coded value from (Social History Type)
+   -->
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11367-0"/>
+				<display value="History of tobacco use"/>
+			</coding>
+			<text value="Smoking"/>
+		</name>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="260413007"/>
+				<display value="None"/>
+				<valueSet>
+					<display value="Tobacco Use Value Set"/>
+				</valueSet>
+			</coding>
+			<text value="None"/>
+		</valueCodeableConcept>
+		<!-- use period here-->
+		<appliesPeriod>
+			<start value="2009-02-27"/>
+		</appliesPeriod>
+		<!-- completed maps to final: -->
+		<status value="final"/>
+	</Observation>
+</resource></entry>
+	<entry><resource>
+			<Observation>
+				<id value="example-result-organizer1"/>
+				<meta>
+					<versionId value="3"/>
+					<lastUpdated value="2015-02-05T04:29:26Z"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">			<h3>CBC Report issued 3-Mar 2011 11:45</h3>			<pre>Test                  Units       Value       Reference RangeHaemoglobin           g/L         176         135 - 180Red Cell Count        x10*12/L    5.9         4.2 - 6.0Haematocrit                       0.55+       0.38 - 0.52Mean Cell Volume      fL          99+         80 - 98Mean Cell Haemoglobin pg          36+         27 - 35Platelet Count        x10*9/L     444         150 - 450White Cell Count      x10*9/L     4.6         4.0 - 11.0Neutrophils           %           20Neutrophils           x10*9/L     0.9---      2.0 - 7.5Lymphocytes           %           20Lymphocytes           x10*9/L     0.9-        1.1 - 4.0Monocytes             %           20Monocytes             x10*9/L     0.9         0.2 - 1.0Eosinophils           %           20Eosinophils           x10*9/L     0.92++      0.04 - 0.40Basophils             %           20Basophils             x10*9/L     0.92+++     &lt;0.21      </pre>			<p>Acme Laboratory, Inc signed: Dr Pete Pathologist</p>      </div>
+				</text>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="58410-2"/>
+						<display value="Complete blood count (hemogram) panel - Blood by Automated count"/>
+					</coding>
+					<coding>
+						<code value="CBC"/>
+						<display value="MASTER FULL BLOOD COUNT"/>
+					</coding>
+					<text value="Complete Blood Count"/>
+				</name>
+				<!-- for mapping to results organizer to Observation there is no value in the observation.
+   -->
+				<!-- the mandatory stats flags mapped : -->
+				<status value="final"/>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example1"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example2"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example3"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example4"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example5"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example6"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example7"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example8"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example9"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example10"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example11"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example12"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example13"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example14"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example15"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example16"/>
+					</target>
+				</related>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example17"/>
+					</target>
+				</related>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example17"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:51:12Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="704-7"/>
+						<display value="Basophils [#/volume] in Blood by Automated count"/>
+					</coding>
+					<text value="Basophils"/>
+				</name>
+				<valueQuantity>
+					<value value="0.92"/>
+					<units value="x10*9/L"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="10*9/L"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<high>
+						<value value="0.21"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example16"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:50:35Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="706-2"/>
+						<display value="Basophils/100 leukocytes in Blood by Automated count"/>
+					</coding>
+					<text value="Basophils"/>
+				</name>
+				<valueQuantity>
+					<value value="20"/>
+					<units value="%"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="%"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example15"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:49:56Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="711-2"/>
+						<display value="Eosinophils [#/volume] in Blood by Automated count"/>
+					</coding>
+					<text value="Eosinophils"/>
+				</name>
+				<valueQuantity>
+					<value value="0.92"/>
+					<units value="x10*9/L"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="10*9/L"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="http://hl7.org/fhir/v2/0078"/>
+						<code value="HH"/>
+					</coding>
+				</interpretation>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="0.04"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</low>
+					<high>
+						<value value="0.40"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example14"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:49:22Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="713-8"/>
+						<display value="Eosinophils/100 leukocytes in Blood by Automated count"/>
+					</coding>
+					<text value="Eosinophils"/>
+				</name>
+				<valueQuantity>
+					<value value="20"/>
+					<units value="%"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="%"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example13"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:48:44Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="742-7"/>
+						<display value="Monocytes [#/volume] in Blood by Automated count"/>
+					</coding>
+					<text value="Monocytes"/>
+				</name>
+				<valueQuantity>
+					<value value="0.9"/>
+					<units value="x10*9/L"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="10*9/L"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="0.2"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</low>
+					<high>
+						<value value="1.0"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example12"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:48:13Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="5905-5"/>
+						<display value="Monocytes/100 leukocytes in Blood by Automated count"/>
+					</coding>
+					<text value="Monocytes"/>
+				</name>
+				<valueQuantity>
+					<value value="20"/>
+					<units value="%"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="%"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example11"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:47:27Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="731-0"/>
+						<display value="Lymphocytes [#/volume] in Blood by Automated count"/>
+					</coding>
+					<text value="Lymphocytes"/>
+				</name>
+				<valueQuantity>
+					<value value="0.9"/>
+					<units value="x10*9/L"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="10*9/L"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="http://hl7.org/fhir/v2/0078"/>
+						<code value="L"/>
+					</coding>
+				</interpretation>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="1.1"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</low>
+					<high>
+						<value value="4.0"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example10"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:46:54Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="736-9"/>
+						<display value="Lymphocytes/100 leukocytes in Blood by Automated count"/>
+					</coding>
+					<text value="Lymphocytes"/>
+				</name>
+				<valueQuantity>
+					<value value="20"/>
+					<units value="%"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="%"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example9"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:46:23Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="751-8"/>
+						<display value="Neutrophils [#/volume] in Blood by Automated count"/>
+					</coding>
+					<text value="Neutrophils"/>
+				</name>
+				<valueQuantity>
+					<value value="0.9"/>
+					<units value="x10*9/L"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="10*9/L"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="http://hl7.org/fhir/v2/0078"/>
+						<code value="LL"/>
+					</coding>
+				</interpretation>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="2.0"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</low>
+					<high>
+						<value value="7.5"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example8"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:45:52Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="770-8"/>
+						<display value="Neutrophils/100 leukocytes in Blood by Automated count"/>
+					</coding>
+					<text value="Neutrophils"/>
+				</name>
+				<valueQuantity>
+					<value value="20"/>
+					<units value="%"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="%"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example7"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:44:35Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="6690-2"/>
+						<display value="Leukocytes [#/volume] in Blood by Automated count"/>
+					</coding>
+					<text value="White Cell Count"/>
+				</name>
+				<valueQuantity>
+					<value value="4.6"/>
+					<units value="x10*9/L"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="10*9/L"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="4.0"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</low>
+					<high>
+						<value value="11.0"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example6"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:43:53Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="777-3"/>
+						<display value="Platelets [#/volume] in Blood by Automated count"/>
+					</coding>
+					<text value="Platelet Count"/>
+				</name>
+				<valueQuantity>
+					<value value="444"/>
+					<units value="x10*9/L"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="10*9/L"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="150"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</low>
+					<high>
+						<value value="450"/>
+						<units value="x10*9/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*9/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example5"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:43:11Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="785-6"/>
+						<display value="Erythrocyte mean corpuscular hemoglobin [Entitic mass] by Automated count"/>
+					</coding>
+					<text value="Mean Cell Haemoglobin"/>
+				</name>
+				<valueQuantity>
+					<value value="36"/>
+					<units value="pg"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="pg"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="http://hl7.org/fhir/v2/0078"/>
+						<code value="H"/>
+					</coding>
+				</interpretation>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="27"/>
+						<units value="pg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="pg"/>
+					</low>
+					<high>
+						<value value="35"/>
+						<units value="pg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="pg"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example4"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:42:13Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="787-2"/>
+						<display value="Erythrocyte mean corpuscular volume [Entitic volume] by Automated count"/>
+					</coding>
+					<text value="Mean Cell Volume"/>
+				</name>
+				<valueQuantity>
+					<value value="99"/>
+					<units value="fL"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="fL"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="http://hl7.org/fhir/v2/0078"/>
+						<code value="H"/>
+					</coding>
+				</interpretation>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="80"/>
+						<units value="fL"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="fL"/>
+					</low>
+					<high>
+						<value value="98"/>
+						<units value="fL"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="fL"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example3"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:41:31Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="4544-3"/>
+						<display value="Hematocrit [Volume Fraction] of Blood by Automated count"/>
+					</coding>
+					<text value="Haematocrit"/>
+				</name>
+				<valueQuantity>
+					<value value="55"/>
+					<units value="%"/>
+				</valueQuantity>
+				<interpretation>
+					<coding>
+						<system value="http://hl7.org/fhir/v2/0078"/>
+						<code value="H"/>
+					</coding>
+				</interpretation>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="38"/>
+						<units value="%"/>
+					</low>
+					<high>
+						<value value="52"/>
+						<units value="%"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example2"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:38:15Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="789-8"/>
+						<display value="Erythrocytes [#/volume] in Blood by Automated count"/>
+					</coding>
+					<text value="Red Cell Count"/>
+				</name>
+				<valueQuantity>
+					<value value="5.9"/>
+					<units value="x10*12/L"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="10*12/L"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="4.2"/>
+						<units value="x10*12/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*12/L"/>
+					</low>
+					<high>
+						<value value="6.0"/>
+						<units value="x10*12/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="10*12/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example1"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-05T04:36:40Z"/>
+				</meta>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="718-7"/>
+						<display value="Hemoglobin [Mass/volume] in Blood"/>
+					</coding>
+					<text value="Haemoglobin"/>
+				</name>
+				<valueQuantity>
+					<value value="176"/>
+					<units value="g/L"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="g/L"/>
+				</valueQuantity>
+				<status value="final"/>
+				<reliability value="ok"/>
+				<referenceRange>
+					<low>
+						<value value="135"/>
+						<units value="g/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="g/L"/>
+					</low>
+					<high>
+						<value value="180"/>
+						<units value="g/L"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="g/L"/>
+					</high>
+				</referenceRange>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="example-result-organizer2"/>
+				<meta>
+					<versionId value="2"/>
+					<lastUpdated value="2015-02-05T04:32:47Z"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">			<h3>ELECTROCARDIOGRAM (EKG) INFORMATION</h3>EKG	Sinus rhythm without acute changes      </div>
+				</text>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="18844-1"/>
+						<display value="EKG impression Narrative"/>
+					</coding>
+					<coding>
+						<code value="EKG"/>
+						<display value="EKG Impression"/>
+					</coding>
+				</name>
+				<!-- for mapping to results organizer to Observation there is no value in the observation.
+   -->
+				<!-- the mandatory stats flags mapped : -->
+				<status value="final"/>
+				<related>
+					<type value="has-member"/>
+					<target>
+						<reference value="Observation/ccda-resultobservationentry-example18"/>
+						<display value="EKG"/>
+					</target>
+				</related>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<resource>
+			<Observation>
+				<id value="ccda-resultobservationentry-example18"/>
+				<meta>
+					<versionId value="2"/>
+					<lastUpdated value="2015-02-05T04:24:21Z"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">			<h3>ELECTROCARDIOGRAM (EKG) INFORMATION</h3>EKG	Sinus rhythm without acute changes      </div>
+				</text>
+				<name>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="18844-1"/>
+						<display value="EKG impression Narrative"/>
+					</coding>
+					<coding>
+						<code value="EKG"/>
+						<display value="EKG Impression"/>
+					</coding>
+				</name>
+				<!-- value in the observation.-->
+				<valueString value="EKG Sinus rhythm without acute changes"/>
+				<!-- the mandatory stats flags mapped : -->
+				<appliesDateTime value="2015-02-05T02:05:17Z"/>
+				<status value="final"/>
+			</Observation>
+		</resource>
+	</entry>
+</Bundle>
+
+
+
