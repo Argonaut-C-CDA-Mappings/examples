@@ -22,8 +22,8 @@
 		<coding>
 			<system value="http://loinc.org"/>
 			<version value="2.52"/>
-			<code value="51848-0"/>
-			<display value="Evaluation note"/>
+			<code value="51847-2"/>
+			<display value="Evaluation+Plan note" />
 			<primary value="true"/>
 		</coding>
 		<text value="ASSESSMENT AND PLAN"></text>
