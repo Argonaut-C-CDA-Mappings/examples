@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List xmlns="http://hl7.org/fhir">
+	<id value="argo-planofcare-example1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2>PHYSICAL EXAMINATION</h2>
+			<ol>
+				<li>HEENT: All normal to examination.</li>
+				<li>Heart: RRR, no murmur.</li>
+				<li>THORAX &amp; LUNGS: Clear without rhonchi or wheeze.</li>
+				<li>ABDOMEN: No distension, tenderness, or guarding, obese, pos bowel sounds.</li>
+				<li>BACK: Normal to inspection and palpation, without tenderness; no presacral edema.</li>
+				<li>EXTREMITIES: Doughy edema bilaterally, chronic stasis changes, no asymmetrical swelling.</li>
+			</ol>
+		</div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.52"/>
+			<code value="29545-1"/>
+			<display value="Physical findings"/>
+			<primary value="true"/>
+		</coding>
+		<text value="PHYSICAL EXAMINATION"></text>
+		
+	</code>
+	<date value="2015-01-26T16:14:49Z"/>
+	<mode value="working"/>
+</List>
