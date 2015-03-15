@@ -3,7 +3,7 @@
 	<!-- EH remove the LIst stuff
 <List xmlns="http://hl7.org/fhir">
 -->
-	<id value="argo-planofcare-example1"/>
+	<id value="argo-assessment-example1"/>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml"> 
