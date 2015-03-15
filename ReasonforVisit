@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Basic xmlns="http://hl7.org/fhir">
+	<!-- EH remove the LIst stuff
+<List xmlns="http://hl7.org/fhir">
+-->
+	<id value="argo-planofcare-example1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml"> 
+                 <h2>REASON FOR VISIT</h2>
+               <p>Dark stools.</p>
+               </div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.52"/>
+			<code value="29299-5"/>
+			<display value="Reason for visit Narrative"/>
+			<primary value="true"/>
+		</coding>
+		<text value="REASON FOR VISIT"></text>
+	</code>
+	<!-- EH remove the LIst stuff
+<date value="2015-01-26T16:14:49Z"/>
+	<mode value="working"/>
+</List>
+-->
+</Basic>
