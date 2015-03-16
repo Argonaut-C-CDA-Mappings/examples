@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List xmlns="http://hl7.org/fhir">
+	<id value="argo-immunizations-example1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2>IMMUNIZATIONS</h2>
+			<table border="1" width="100%">
+				<thead>
+					<tr>
+						<th>Vaccine</th>
+						<th>Date</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<content ID="immun1"/>Influenza virus vaccine, IM</td>
+						<td>Nov 1999</td>
+						<td>Completed</td>
+					</tr>
+					<tr>
+						<td>
+							<content ID="immun2"/>Influenza virus vaccine, IM</td>
+						<td>Dec 1998</td>
+						<td>Completed</td>
+					</tr>
+					<tr>
+						<td>
+							<content ID="immun3"/>Pneumococcal polysaccharide vaccine, IM</td>
+						<td>Dec 1998</td>
+						<td>Completed</td>
+					</tr>
+					<tr>
+						<td>
+							<content ID="immun4"/>Tetanus and diphtheria toxoids, IM</td>
+						<td>1997</td>
+						<td>Refused</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.52"/>
+			<code value="11369-6"/>
+			<display value="History of immunization Narrative"/>
+			<primary value="true"/>
+		</coding>
+		<text value="IMMUNIZATIONS"/>
+	</code>
+	<date value="2015-01-26T16:14:49Z"/>
+	<mode value="working"/>
+	<entry>
+		<item>
+			<reference value="Immunizatrino/argo-immunizationactivity-example1"/>
+		</item>
+	</entry>
+</List>
