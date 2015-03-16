@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List xmlns="http://hl7.org/fhir">
+	<id value="argo-vitalsigns-example1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2>VITAL SIGNS</h2>
+			  <table border="1" width="100%">
+                     <thead>
+                        <tr>
+                           <th align="right">Date / Time: </th>
+                           <th>Nov 14, 1999</th>
+                           <th>April 7, 2000</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th align="left">Height</th>
+                           <td>
+                              <content ID="vit1">177 cm</content></td>
+                           <td>
+                              <content ID="vit2">177 cm</content></td>
+                        </tr>
+                        <tr>
+                           <th align="left">Weight</th>
+                           <td>
+                              <content ID="vit3">86 kg</content></td>
+                           <td>
+                              <content ID="vit4">88 kg</content></td>
+                        </tr>
+                        <tr>
+                           <th align="left">Blood Pressure</th>
+                           <td><content ID="vit5">132/86 mmHg</content></td>
+                           <td><content ID="vit6">145/88 mmHg</content></td>
+                        </tr>
+                     </tbody>
+                  </table>
+		</div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.52"/>
+			<code value="8716-3"/>
+			<display value="Vital signs"/>
+			<primary value="true"/>
+		</coding>
+		<text value="VITAL SIGNS"/>
+	</code>
+	<date value="2015-01-26T16:14:49Z"/>
+	<mode value="working"/>
+	<entry>
+		<item>
+			<reference value="Observation/argo-vitalsignsorganizer-example1"/>
+		</item>
+	</entry>
+</List>
