@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List>
+	<id value="57"/>
+	<meta>
+		<versionId value="5"/>
+		<lastUpdated value="2015-02-05T03:53:22Z"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml"><h2>RESULTS</h2>
+			<h3>CBC Report issued 3-Mar 2011 11:45</h3>
+			<pre>Test                  Units       Value       Reference RangeHaemoglobin           g/L         176         135 - 180Red Cell Count        x10*12/L    5.9         4.2 - 6.0Haematocrit                       0.55+       0.38 - 0.52Mean Cell Volume      fL          99+         80 - 98Mean Cell Haemoglobin pg          36+         27 - 35Platelet Count        x10*9/L     444         150 - 450White Cell Count      x10*9/L     4.6         4.0 - 11.0Neutrophils           %           20Neutrophils           x10*9/L     0.9---      2.0 - 7.5Lymphocytes           %           20Lymphocytes           x10*9/L     0.9-        1.1 - 4.0Monocytes             %           20Monocytes             x10*9/L     0.9         0.2 - 1.0Eosinophils           %           20Eosinophils           x10*9/L     0.92++      0.04 - 0.40Basophils             %           20Basophils             x10*9/L     0.92+++     &lt;0.21      </pre>
+			<p>Acme Laboratory, Inc signed: Dr Pete Pathologist</p>
+			<h3>ELECTROCARDIOGRAM (EKG) INFORMATION</h3>EKG	Sinus rhythm without acute changes      </div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.52"/>
+			<code value="30954-2"/>
+			<display value="Relevant diagnostic tests/laboratory data Narrative"/>
+			<primary value="true"/>
+		</coding>
+		<text value="RESULTS"/>
+	</code>
+	<date value="2015-02-03T16:14:49Z"/>
+	<mode value="working"/>
+	<!--multiple observations - panel-->
+	<entry>
+		<item>
+			<reference value="Observation/example-result-organizer1"/>
+			<display value="CBC"/>
+		</item>
+		<!--single observation-->
+	</entry>
+	<entry>
+		<item>
+			<reference value="Observation/example-result-organizer2"/>
+			<display value="EKG"/>
+		</item>
+	</entry>
+</List>
