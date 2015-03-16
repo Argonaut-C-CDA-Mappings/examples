@@ -1,0 +1,113 @@
+<Patient>
+				<id value="1691"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2015-02-02T19:32:21Z"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">			<table class="header_table">				<tr>					<td class="td_header_role_name">						<span class="td_label">Patient</span>					</td>					<td class="td_header_role_value">Isabella Jones</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Date of birth</span>					</td>					<td class="td_header_role_value">May 1, 2005 </td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Sex</span>					</td>					<td class="td_header_role_value">Female</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Race</span>					</td>					<td class="td_header_role_value">Aleut</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Ethnicity</span>					</td>					<td class="td_header_role_value">Not Hispanic or Latino</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Contact info</span>					</td>					<td class="td_header_role_value"> Primary Home:<br/>1357 Amber Drive<br/>Beaverton, OR 97867, US<br/>Tel:  (816)276-6909<br/>					</td>				</tr>				<tr>					<td class="td_header_role_name">						<span class="td_label">Patient IDs</span>					</td>					<td class="td_header_role_value">998991 2.16.840.1.113883.19.5.99999.2<br/>111-00-2330 2.16.840.1.113883.4.1<br/>					</td>				</tr>			</table>		</div>
+				</text>
+				<extension url="http://hl7.org/fhir/ExtensionDefinition/us-core-race">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/Race"/>
+							<display value="American Indian or Alaska Native"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<extension url="http://hl7.org/fhir/ExtensionDefinition/us-core-ethnicity">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/Ethnicity"/>
+							<display value="Not Hispanic or Latino"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<extension url="http://hl7.org/fhir/ExtensionDefinition/us-core-religion">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/ReligiousAffiliation"/>
+							<display value="Christian (non-Catholic, non-specific)"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<!-- Fake ID using HL7 example OID. -->
+				<identifier>
+					<use value="usual"/>
+					<label value="MRN"/>
+					<system value="urn:oid:2.16.840.1.113883.19.5.99999.2"/>
+					<value value="998991"/>
+				</identifier>
+				<!-- Fake Social Security Number using the actual SSN OID. -->
+				<identifier>
+					<use value="usual"/>
+					<label value="SSN"/>
+					<system value="urn:oid:2.16.840.1.113883.4.1"/>
+					<value value="111-00-2330"/>
+				</identifier>
+				<!-- Peter James Chalmers, but called "Jim" -->
+				<name>
+					<use value="official"/>
+					<family value="Jones"/>
+					<given value="Isabella"/>
+				</name>
+				<name>
+					<use value="usual"/>
+					<given value="Isa"/>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="(816)276-6909"/>
+					<use value="home"/>
+				</telecom>
+				<!-- use FHIR code system for male / female -->
+				<gender value="female"/>
+				<birthDate value="2005-05-01"/>
+				<deceasedBoolean value="false"/>
+				<address>
+					<use value="home"/>
+					<line value="1357 Amber Drive"/>
+					<city value="Beaqverton"/>
+					<state value="OR"/>
+					<postalCode value="97867"/>
+					<country value="US"/>
+					<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
+				</address>
+				<maritalStatus>
+					<coding>
+						<system value="MaritalStatusCode"/>
+						<code value="M"/>
+						<display value="Married"/>
+					</coding>
+				</maritalStatus>
+				<contact>
+					<relationship>
+						<coding>
+							<system value="http://hl7.org/fhir/patient-contact-relationship"/>
+							<code value="parent"/>
+						</coding>
+					</relationship>
+					<name>
+						<family value="Jones"/>
+						<given value="Ralph"/>
+					</name>
+					<address>
+						<use value="home"/>
+						<line value="1357 Amber Drive"/>
+						<city value="Beaqverton"/>
+						<state value="OR"/>
+						<postalCode value="97867"/>
+						<country value="US"/>
+						<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
+					</address>
+				</contact>
+				<communication>
+					<coding>
+						<system value="IETF language tag"/>
+						<code value="en"/>
+						<display value="English"/>
+					</coding>
+				</communication>
+				<active value="true"/>
+			</Patient>
