@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List xmlns="http://hl7.org/fhir">
+	<id value="argo-familyhistory-example1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2>FAMILY HISTORY</h2>
+			  <paragraph>Father (deceased)</paragraph>
+                  <table border="1" width="100%">
+                     <thead>
+                        <tr>
+                           <th>Diagnosis</th>
+                           <th>Age At Onset</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Myocardial Infarction (cause of death)</td>
+                           <td>57</td>
+                        </tr>
+                        <tr>
+                           <td>Diabetes</td>
+                           <td>40</td>
+                        </tr>
+                     </tbody>
+                  </table>
+		</div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.52"/>
+			<code value="10157-6"/>
+			<display value="History of family member diseases Narrative"/>
+			<primary value="true"/>
+		</coding>
+		<text value="FAMILY HISTORY"/>
+	</code>
+	<date value="2015-01-26T16:14:49Z"/>
+	<mode value="working"/>
+	<entry>
+		<item>
+			<reference value="FamilyHistory/argo-familyhistoryorganizer-example1"/>
+		</item>
+	</entry>
+</List>
