@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List xmlns="http://hl7.org/fhir">
+	<id value="argo-problem-example1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2>PROBLEM LIST</h2>
+			  <ol>
+                     <li><content ID="problem1">Pneumonia : Status - Resolved</content></li>
+                     <li><content ID="problem2">Asthma : Status - Active</content></li>
+                  </ol>
+		</div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.52"/>
+			<code value="11450-4"/>
+			<display value="Problem list - Reported"/>
+			<primary value="true"/>
+		</coding>
+		<text value="PROBLEM LIST"/>
+	</code>
+	<date value="2015-01-26T16:14:49Z"/>
+	<mode value="working"/>
+	<entry>
+		<item>
+			<reference value="Condition/argo-problemobservation-example1"/>
+		</item>
+	</entry>
+</List>
