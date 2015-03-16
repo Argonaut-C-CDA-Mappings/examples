@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List xmlns="http://hl7.org/fhir">
+	<id value="argo-procedures-example1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2>PROCEDURES</h2>
+			<table border="1" width="100%">
+				<thead>
+					<tr>
+						<th>Procedure</th>
+						<th>Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<content ID="Proc1">Colonic polypectomy</content>
+						</td>
+						<td>1998</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.52"/>
+			<code value="47519-4"/>
+			<display value="History of Procedures Document"/>
+			<primary value="true"/>
+		</coding>
+		<text value="PROCEDURES"/>
+	</code>
+	<date value="2015-01-26T16:14:49Z"/>
+	<mode value="working"/>
+</List>
