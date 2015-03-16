@@ -44,7 +44,7 @@
 	<mode value="working"/>
 	<entry>
 		<item>
-			<reference value="MedcationStatement/argo-medicationactivity-example1"/>
+			<reference value="MedicationStatement/argo-medicationactivity-example1"/>
 		</item>
 	</entry>
 </List>
