@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List xmlns="http://hl7.org/fhir">
+	<id value="argo-complications-example1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2>COMPLICATIONS</h2>
+			  <p>Asthmatic symptoms while under general
+                     anesthesia.</p>
+		</div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<version value="2.52"/>
+			<code value="55109-3"/>
+			<display value="Complications Document"/>
+			<primary value="true"/>
+		</coding>
+		<text value="COMPLICATIONS"/>
+	</code>
+	<date value="2015-01-26T16:14:49Z"/>
+	<mode value="working"/>
+</List>
