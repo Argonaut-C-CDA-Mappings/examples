@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Basic xmlns="http://hl7.org/fhir">
-	<!-- EH remove the LIst stuff
+
 <List xmlns="http://hl7.org/fhir">
--->
+
 	<id value="argo-planofcare-example1"/>
 	<text>
 		<status value="generated"/>
@@ -33,9 +32,7 @@
 		</coding>
 		<text value="HISTORY OF PRESENT ILLNESS"></text>
 	</code>
-	<!-- EH remove the LIst stuff
 <date value="2015-01-26T16:14:49Z"/>
 	<mode value="working"/>
 </List>
--->
-</Basic>
+
