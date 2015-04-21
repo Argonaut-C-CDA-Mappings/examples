@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Observations should be used for care that result in information about the patient (e.g. a diagnostic test & result) but do not alter physical state-->
+<!-- Procedure Observation Act example - this is the Procedure resource half of the  merged mapping
+Observations should be used for care that result in information about the patient (e.g. a diagnostic test & result) but do not alter physical state-->
 <Procedure xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICHPLAPTOP/Users/HL7/FHIR/20141020Build/schema/procedure.xsd">
 	<id value="argo-proc-obs-act-example1"/>
 	<text>
