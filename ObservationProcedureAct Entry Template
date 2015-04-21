@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Procedure Observation Act example - this is the Procedure resource half of the  merged mapping
-Observations should be used for care that result in information about the patient (e.g. a diagnostic test & result) but do not alter physical state-->
+<!-- Observations should be used for care that result in information about the patient (e.g. a diagnostic test & result) but do not alter physical state-->
 <Procedure xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICHPLAPTOP/Users/HL7/FHIR/20141020Build/schema/procedure.xsd">
 	<id value="argo-proc-obs-act-example1"/>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">Argonaut-procactobs-example</div>
 	</text>
+	<identifier>
+		<system value="urn:oid:c03e5445-af1b-4911-a419-e2782f21448c"/>
+		<value value="123456"/>
+	</identifier>
 	<patient>
 		<reference value="Patient/1691"/>
 	</patient>
@@ -32,4 +35,4 @@ Observations should be used for care that result in information about the patien
 			<display value="Procudure Observation Act related observation example"/>
 		</target>
 	</relatedItem>
-</Procedure>Enter file contents here
+</Procedure>
