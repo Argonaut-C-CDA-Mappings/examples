@@ -1,3 +1,5 @@
+------------------------------------Procedure resource ----------------------------------------------------------
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Observations should be used for care that result in information about the patient (e.g. a diagnostic test & result) but do not alter physical state-->
 <Procedure xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICHPLAPTOP/Users/HL7/FHIR/20141020Build/schema/procedure.xsd">
@@ -36,3 +38,36 @@
 		</target>
 	</relatedItem>
 </Procedure>
+----------------------------- related Observation Resource ----------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Procedure Observation Act example - this is the Observation resource half of the  merged mapping
+Observations should be used for care that result in information about the patient (e.g. a diagnostic test & result) but do not alter physical state
+-->
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ..\..\schema\observation.xsd">
+	<id value="argo-proc-obs-act-example1"/>
+	<code>
+		<!-- SNOMED  codes is same as Procedure.type -->
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="268400002"/>
+			<display value="12 lead ECG"/>
+		</coding>
+		<text value="12 lead ECG"/>
+	</code>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="251135002"/>
+			<display value="Borderline normal ECG"/>
+		</coding>
+	</valueCodeableConcept>
+	<appliesDateTime value="2015-04-21T17:57:30Z"/>
+	<!-- the mandatory quality flags: -->
+	<status value="final"/>
+	<identifier>
+		<system value="urn:oid:c03e5445-af1b-4911-a419-e2782f21448c"/>
+		<value value="123456"/>
+	</identifier>
+</Observation>
+
