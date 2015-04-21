@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Observations should be used for care that result in information about the patient (e.g. a diagnostic test & result) but do not alter physical state-->
+<Procedure xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICHPLAPTOP/Users/HL7/FHIR/20141020Build/schema/procedure.xsd">
+	<id value="argo-proc-obs-act-example1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">Argonaut-procactobs-example</div>
+	</text>
+	<patient>
+		<reference value="Patient/1691"/>
+	</patient>
+	<status value="completed"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="268400002"/>
+			<display value="12 lead ECG"/>
+		</coding>
+		<text value="12 lead ECG"/>
+	</type>
+	<performer>
+		<person>
+			<reference value="Practitioner/example"/>
+			<display value="Dr Cecil Surgeon"/>
+		</person>
+	</performer>
+	<performedDateTime value="2015-04-21T17:57:30Z"/>
+	<relatedItem>
+		<target>
+			<reference value="Observation/argo-proc-obs-act-example1"/>
+			<display value="Procudure Observation Act related observation example"/>
+		</target>
+	</relatedItem>
+</Procedure>Enter file contents here
